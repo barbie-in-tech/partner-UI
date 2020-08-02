@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:partner/profile_main.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -23,7 +24,10 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             icon: Icon(Icons.person),
             iconSize: 30.0,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ProfileMain()));
+            },
           )
         ],
       ),
@@ -181,6 +185,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 60.0,
               )
             ],
           ),
