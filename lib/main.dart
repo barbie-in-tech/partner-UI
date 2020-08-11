@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:partner/login_page.dart';
+import 'package:partner/history.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       //home: ProfileMain(),
-      home: LoginPage(),
+      home: PatientHistory(),
     );
   }
 }
